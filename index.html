@@ -65,14 +65,14 @@
     .socials img {
       width: 20px;
       height: 20px;
-      filter: brightness(0) invert(1); /* Bikin ikon jadi putih */
+      filter: brightness(0) invert(1);
     }
+
     .socials img.no-filter {
-  filter: none;
-}
+      filter: none;
+    }
 
-
-    .links button {
+    .links a button {
       display: block;
       width: 300px;
       padding: 12px;
@@ -86,7 +86,7 @@
       transition: 0.3s;
     }
 
-    .links button:hover {
+    .links a button:hover {
       background-color: #444;
     }
 
@@ -99,53 +99,47 @@
       font-weight: bold;
       cursor: pointer;
       transition: 0.3s;
+      text-decoration: none;
+      display: inline-block;
     }
 
     .join-button:hover {
       background-color: #555;
     }
   </style>
-
-  <script>
-    function openLink(url) {
-      window.open(url, '_blank');
-    }
-  </script>
 </head>
 <body>
 
-  <img class="profile-img" src="d:\ktp\dela_kebaya.jpg" alt="Foto Dela">
+  <img class="profile-img" src="img/dela_kebaya.jpg" alt="Foto Dela">
 
   <h2>Dela Saputri</h2>
   <p class="tagline">Information System Student | Learning Web Development | Exploring Excel & Admin Work</p>
 
   <div class="socials">
     <a href="https://www.instagram.com/flwrdeellv?igsh=bmlranlqMnR4bmUz" target="_blank">
-     <img class="no-filter" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"> Instagram
+      <img class="no-filter" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"> Instagram
     </a>
-
     <a href="https://github.com/delasaputri050604" target="_blank">
       <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub"> GitHub
     </a>
-
     <a href="mailto:delagamesx@gmail.com">
-     <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email"> Email
+      <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email"> Email
     </a>
-
     <a href="https://www.linkedin.com/in/dela-saputri-a49330286/" target="_blank">
       <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"> LinkedIn
     </a>
   </div>
 
   <div class="links">
-    <button onclick="openLink('portfolio.pdf')">Lihat Portofolio</button>
-    <button onclick="openLink('cv-ats.pdf')">Download CV ATS</button>
+    <a href="portfolio.pdf" target="_blank">
+      <button>Lihat Portofolio</button>
+    </a>
+    <a href="cv-ats.pdf" download>
+      <button>Download CV ATS</button>
+    </a>
   </div>
 
-  <a href="https://linktr.ee/Delafr" class="join-button" target="_blank">
-  * Join Dela on Linktree
-</a>
-
+  
 
 </body>
 </html>
